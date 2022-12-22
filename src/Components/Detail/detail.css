@@ -1,0 +1,74 @@
+.detail {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+  overflow: auto;
+  padding-top: 20%;
+}
+.detail .detailContent {
+  background-color: white;
+  position: absolute;
+  display: flex;
+  width: 95%;
+  padding: 40px;
+}
+.detail .detailContent .imgdetail {
+  width: 40%;
+  margin-right: 5%;
+}
+.detail .detailContent .imgdetail img {
+  height: 100%;
+  width: 100%;
+}
+.detail .detailContent .detailscontent {
+  width: 55%;
+}
+.detail .detailContent .detailscontent .btn {
+  padding: 10px;
+  color: white;
+}
+.detail .detailContent .detailscontent .btnclose {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.detail .detailContent .detailscontent .imglist {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  grid-template-columns: repeat(3, 1fr);
+}
+.detail .detailContent .detailscontent .imglist img {
+  height: 170px;
+}
+.detail .detailContent .detailscontent .imglist img:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 1400px) {
+  .detail .detailContent {
+    display: grid;
+    top: 10%;
+  }
+  .detail .detailContent .imgdetail {
+    width: 100%;
+  }
+  .detail .detailContent .detailscontent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .detail .detailContent .detailscontent .imglist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=detail.css.map */
